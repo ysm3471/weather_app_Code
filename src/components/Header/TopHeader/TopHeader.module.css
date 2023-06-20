@@ -1,0 +1,8 @@
+.TopHeader {
+  margin-bottom:17px;
+}
+.TopHeader::after {
+  display:block;
+  content:"";
+  clear: both;
+}

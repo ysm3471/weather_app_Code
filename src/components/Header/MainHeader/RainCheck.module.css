@@ -1,0 +1,22 @@
+.RainCheck {
+  font-size:17px;
+  font-weight:300;
+  margin-bottom:1px;
+}
+.normal {
+  opacity:0.8;
+}
+.snow {
+  color:var(--rich_b);
+  font-weight:500;
+}
+.RainCheck span {
+  color:var(--red);
+  font-weight:700;
+}
+.rainy b {
+  color:var(--blue);
+}
+.snow b {
+  color:var(--default_w);
+}

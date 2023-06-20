@@ -1,0 +1,26 @@
+.Local {
+  display:flex;
+  justify-content:right;
+  align-items:center;
+  font-size:14px;  
+  font-weight:200;  
+}
+.Local p {
+  line-height:17px;
+  margin-bottom:1px;
+  margin-right:3px
+}
+.gps {
+  width:15px;
+  height:15px;
+}
+.edit {
+  width:16px;
+  height:16px;
+  cursor: pointer;
+}
+.snow {
+  color:var(--rich_b);
+  opacity:0.9;
+  font-weight:400;
+}

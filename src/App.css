@@ -1,0 +1,42 @@
+:root {
+  --default_w: #fff;
+  --default_b: #333;
+  --deep_b: #111;
+  --light_red: #ff3a3a;
+  --red: #cf3d3d;
+  --blue: #556eee;
+  --light_blue: #41adea;
+  --rich_b: #222
+}
+
+.container {
+  background:#E2E2E2 center center/cover;
+  width: 100%;
+  height: 100vh;
+  padding:12px;
+  overflow:hidden;
+  overflow-y:auto;
+  position:relative;
+}
+.container::-webkit-scrollbar {
+  display:none;
+}
+main {
+  padding-bottom:10%;
+}
+
+
+/* 스와이퍼 디자인 변경 *module 변경의 경우 patch-package를 통해서 변경해야 수정사항이 적용된다 */
+.swiper-horizontal>.swiper-scrollbar {
+  height:1.5px !important;
+  bottom:6px !important;
+  left:10px !important;
+  width:92% !important;
+}
+/* material ui 사용 */
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase {
+  left:1px !important;
+}
+.css-j204z7-MuiFormControlLabel-root {
+  margin-right:0px !important;
+}

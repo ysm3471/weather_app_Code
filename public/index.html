@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/img/heavy_snow.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no" />    
+    <!-- 확대 금지를 위한 스크립트 -->
+    <meta name="theme-color" content="#000000" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!-- mixed content error를 해결하는 스크립트. http에서 받은 데이터를 사용 가능하게 해준다고 한다  -->
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script type="text/javascript"
+    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b0a2e3aa262dccc98e371f3ef5f09b22&libraries=services,clusterer,drawing"></script>
+    <title>IsRainy</title>
+  </head>
+  <body>
+    <div id="overlays"></div>
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.More {
+  text-align: center;
+}
+
+.More button {
+  width: 88px;
+  height: 25px;
+  background: rgba(223, 223, 223, 0.9);
+  border-radius: 20px;
+  border: none;
+  font-size: 11px;
+  color: #474747;
+  font-family: 'Noto Sans KR';
+  font-weight: 400;
+  cursor: pointer;
+}

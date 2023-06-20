@@ -1,0 +1,14 @@
+.TodayWeather {
+  width:80%;
+  margin:auto;
+  background:rgba(255,255,255,0.9);
+  border-radius:20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom:15%;
+  padding:18px 5px;
+}
+.BoxWraped {
+  width:100%;
+  display:flex;
+  overflow:hidden;
+}

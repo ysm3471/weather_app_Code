@@ -1,0 +1,10 @@
+.TempHighLow {
+  font-size:14px;
+  opacity:0.9;
+  font-weight:400;
+}
+.snow {
+  color:var(--deep_b);
+  font-weight:700;
+  opacity:1;
+}

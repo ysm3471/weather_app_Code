@@ -1,0 +1,37 @@
+diff --git a/node_modules/swiper/modules/scrollbar/scrollbar.js b/node_modules/swiper/modules/scrollbar/scrollbar.js
+index 03010da..8bf4a42 100644
+--- a/node_modules/swiper/modules/scrollbar/scrollbar.js
++++ b/node_modules/swiper/modules/scrollbar/scrollbar.js
+@@ -73,8 +73,8 @@ export default function Scrollbar({
+       el.style.opacity = 1;
+       timeout = setTimeout(() => {
+         el.style.opacity = 0;
+-        el.style.transitionDuration = '400ms';
+-      }, 1000);
++        el.style.transitionDuration = '300ms';
++      }, 500);
+     }
+   }
+   function setTransition(duration) {
+@@ -202,7 +202,7 @@ export default function Scrollbar({
+       clearTimeout(dragTimeout);
+       dragTimeout = nextTick(() => {
+         el.style.opacity = 0;
+-        el.style.transitionDuration = '400ms';
++        el.style.transitionDuration = '200ms';
+       }, 1000);
+     }
+     emit('scrollbarDragEnd', e);
+diff --git a/node_modules/swiper/modules/scrollbar/scrollbar.scss b/node_modules/swiper/modules/scrollbar/scrollbar.scss
+index 2ac8b76..0e20e59 100644
+--- a/node_modules/swiper/modules/scrollbar/scrollbar.scss
++++ b/node_modules/swiper/modules/scrollbar/scrollbar.scss
+@@ -29,7 +29,7 @@
+     bottom: var(--swiper-scrollbar-bottom, 4px);
+     top: var(--swiper-scrollbar-top, auto);
+     z-index: 50;
+-    height: var(--swiper-scrollbar-size, 4px);
++    height: 15px;
+     width: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%));
+   }
+   .swiper-vertical > &,

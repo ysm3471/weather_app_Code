@@ -1,0 +1,21 @@
+.Loading {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:auto;
+  width:100%;
+  height:100vh;
+}
+.Loading div {
+  width:80px;
+  height:80px;
+  transition:1s;
+}
+.Loading div img {
+  width:100%;
+  height:100%;
+}
+
+.Loading div:hover {
+  transform:rotate(360deg);
+}

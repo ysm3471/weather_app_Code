@@ -1,0 +1,22 @@
+.Time {
+  display:flex;
+  justify-content:right;
+  align-items:flex-end;
+  margin-bottom:3px;
+  font-size:15px;
+  font-weight:300;
+}
+.icon {
+  width:16px;
+  height:16px;
+  margin-right:2px;
+  cursor: pointer;
+}
+.Time p {
+  line-height:18px;
+}
+.snow {
+  color:var(--rich_b);
+  opacity:0.9;
+  font-weight:400;
+}

@@ -1,0 +1,29 @@
+.WeatherBox {
+  width:60px;
+  height:106px;
+  /* nowrap과 같이 쓰면 일렬로 정렬하게 할 수 있음 */
+  color:var(--default_b);
+  text-align:center;
+  margin:auto;
+}
+.WeatherBox h3 {
+  font-size:12px;
+  font-weight:500;
+}
+.temp {
+  font-size:12px;
+  font-weight:400;
+}
+.per {
+  font-size:8px;
+  opacity:0.7;
+}
+.rainPer {
+  font-size:8px;
+  opacity:0.7;
+  color:var(--light_blue);
+}
+.noRain {
+  font-size:8px;
+  opacity:0.7;
+}

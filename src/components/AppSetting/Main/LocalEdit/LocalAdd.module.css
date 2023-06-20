@@ -1,0 +1,9 @@
+.LocalAdd {
+  padding:14px 0;
+}
+.LocalAdd div {
+  width:15px;
+  height:15px;
+  margin:auto;
+  cursor: pointer;
+}
