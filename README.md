@@ -150,5 +150,5 @@ ISRainy
 </pre>
 <br><br>
 >느낀 점
-> * 처음으로 React로 작업한 프로젝트이다. 폴더관리나 기초적인 hook 사용법 등등 모르는 것이 많아 다양한 블로그 글을 참고했다.<br>가장 어려웠던 것은 원하지 않는 re-rendering 문제였는데, 너무 많은 rendering을 일으킬 수 있는 작업은 context에서 처리한 뒤 배포하는 방식으로 해결하였다.
-> * 이후에 typescript로 refactoring도 진행해보았다. 폴더와 변수 관리를 잘 해놓았기 때문에 큰 문제없이 진행되었다.<br>(링크:[TypeScript-code](https://github.com/ysm3471/weather-ts "TypeScript"))
+> * 처음으로 React로 작업한 프로젝트이다. 폴더관리나 기초적인 hook 사용법 등등 모르는 것이 많아 다양한 블로그 글을 참고했다. 가장 어려웠던 것은 원하지 않는 re-rendering 문제였는데, 너무 많은 rendering을 일으킬 수 있는 작업은 context에서 처리한 뒤 배포하는 방식으로 해결하였다.
+> * 이후에 typescript로 refactoring도 진행해보았다. 폴더와 변수 관리를 잘 해놓았기 때문에 큰 문제없이 진행되었다.(링크:[TypeScript-code](https://github.com/ysm3471/weather-ts "TypeScript"))
