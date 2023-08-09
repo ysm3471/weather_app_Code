@@ -8,8 +8,8 @@ IsRainy
 <br><br>
 > 주요 코드 1
 > * 기상청 api를 state 변수에 저장하는 코드. 요청에 시간이 걸리기 때문에 페이지 로드 시에 한 번만 요청한다.<br>정보의 양이 많아 3페이지까지 있기 때문에 3번 요청할 필요가 있었다
-<pre>
-  <code>
+> * 
+```js
     useEffect(() => {
     setOn(false)    // api의 호출 완료를 표시하는 state
     GetInfo(todayDate, number,convertLoaction.x,convertLoaction.y)    // api를 요청하는 함수. 오늘 날짜와 페이지넘버, 가공된 x,y좌표를 변수로 받음
@@ -27,13 +27,13 @@ IsRainy
         setNumber(1);
         console.log(error,"에러가 발생했습니다")})
   }, [number])
-  </code>  
-</pre> 
+```
+
 <br><br>
 > 주요 코드 2
 > * 요청한 정보를 가공하는 코드. state에 저장한 정보를 가공하기 때문에 재요청하지 않는다.
-<pre>
-  <code>
+
+```js
     useEffect(() => {
     getReady(false)  // api 처리의 완료를 표시하는 state
     if (on) {
@@ -84,13 +84,13 @@ IsRainy
       }
     }
   }, [num, page, on])
-  </code>
-</pre>
+```
+
 <br><br>
 > 주요 코드 3
 > * 개발자 모드. 날씨 상태에 따른 앱 변화를 보기 위해서 만들었다.<br>가공한 api의 state를 수정하는 방식으로 만들어봤다.
-<pre>
-  <code>
+
+```js
   useEffect(() => {
     switch(changeWeather) {
       case "normal":    // 맑음 상태는 강수확률을 0으로 만든다
@@ -146,8 +146,8 @@ IsRainy
         break;
     }
   },[changeWeather,num])
-  </code>
-</pre>
+```
+
 <br><br>
 >느낀 점
 > * 처음으로 React로 작업한 프로젝트이다. 폴더관리나 기초적인 hook 사용법 등등 모르는 것이 많아 다양한 블로그 글을 참고했다. 가장 어려웠던 것은 원하지 않는 re-rendering 문제였는데, 너무 많은 rendering을 일으킬 수 있는 작업은 context에서 처리한 뒤 배포하는 방식으로 해결하였다.
