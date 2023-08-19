@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { memo } from 'react';
 import classes from './Footer.module.css'
 import { useContext } from 'react';
 import { WeatherContext } from '../Store/WeatherProvider';
 
-export default function Footer({weather}) {
+function Footer({weather}) {
   const {settingToggleBtn} = useContext(WeatherContext);
 
   return (
@@ -14,3 +14,5 @@ export default function Footer({weather}) {
     </footer>
   )
 }
+
+export default memo(Footer);

@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
+import React, { memo, useContext } from 'react';
 import classes from './NextWeather.module.css';
 import ForecastList from './ForecastList';
 import { WeatherContext } from '../../Store/WeatherProvider';
 
-export default function NextWeather() {
+function NextWeather() {
   const {TMN,TMX,rain} = useContext(WeatherContext)
   
   return (
@@ -16,3 +16,5 @@ export default function NextWeather() {
     </div>
   )
 }
+
+export default memo(NextWeather);

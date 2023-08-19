@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { memo } from 'react';
 import classes from './TodayWeather.module.css'
 import More from './More/More';
 import Slider from './WeatherBox/Slider';
 
-export default function TodayWeather() {
+function TodayWeather() {
+
+  console.log('todayWeather')
   return (
     <div className={classes.TodayWeather}>
       <div className={classes.BoxWraped}>
@@ -13,3 +15,7 @@ export default function TodayWeather() {
     </div>
   )
 }
+
+export default memo(TodayWeather)
+
+

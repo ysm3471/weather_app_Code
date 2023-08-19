@@ -1,8 +1,8 @@
-import React, { useContext } from 'react';
+import React, { memo, useContext } from 'react';
 import classes from './Header.module.css'
 import { WeatherContext } from '../../Store/WeatherProvider';
 
-export default function Header() {
+function Header() {
   const {settingToggleBtn} = useContext(WeatherContext)
 
   return (
@@ -14,3 +14,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default memo(Header);
